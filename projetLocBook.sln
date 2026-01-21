@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projetLocBook", "projetLocBook\projetLocBook.csproj", "{AE44C121-BC49-413B-94B6-8700EA876BFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE44C121-BC49-413B-94B6-8700EA876BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE44C121-BC49-413B-94B6-8700EA876BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE44C121-BC49-413B-94B6-8700EA876BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE44C121-BC49-413B-94B6-8700EA876BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F66D53CF-AF5B-4C5E-8D55-3269E29480B4}
+	EndGlobalSection
+EndGlobal

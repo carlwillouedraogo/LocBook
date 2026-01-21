@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE44C121-BC49-413B-94B6-8700EA876BFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projetLocBook</RootNamespace>
+    <AssemblyName>projetLocBook</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entites\Achat.cs" />
+    <Compile Include="Entites\AuthResponse.cs" />
+    <Compile Include="Entites\AuthTokenManager.cs" />
+    <Compile Include="Entites\Categorie.cs" />
+    <Compile Include="Entites\Emprunt.cs" />
+    <Compile Include="Entites\Genre.cs" />
+    <Compile Include="Entites\Membre.cs" />
+    <Compile Include="Entites\Ouvrage.cs" />
+    <Compile Include="Entites\Panier.cs" />
+    <Compile Include="Entites\Reservation.cs" />
+    <Compile Include="Entites\SessionManager.cs" />
+    <Compile Include="Entites\User.cs" />
+    <Compile Include="frmAjouterLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjouterLivre.Designer.cs">
+      <DependentUpon>frmAjouterLivre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifierLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifierLivre.Designer.cs">
+      <DependentUpon>FrmModifierLivre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotPasseOublier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMotPasseOublier.Designer.cs">
+      <DependentUpon>frmMotPasseOublier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametre.Designer.cs">
+      <DependentUpon>frmParametre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAchat.Designer.cs">
+      <DependentUpon>frmAchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmprunt.Designer.cs">
+      <DependentUpon>frmEmprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorique.Designer.cs">
+      <DependentUpon>frmHistorique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnregistrement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnregistrement.Designer.cs">
+      <DependentUpon>FrmEnregistrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLivre.Designer.cs">
+      <DependentUpon>FrmLivre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPageAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPageAccueil.Designer.cs">
+      <DependentUpon>FrmPageAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPanier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPanier.Designer.cs">
+      <DependentUpon>frmPanier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfil.Designer.cs">
+      <DependentUpon>FrmProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAjouterLivre.resx">
+      <DependentUpon>frmAjouterLivre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifierLivre.resx">
+      <DependentUpon>FrmModifierLivre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotPasseOublier.resx">
+      <DependentUpon>frmMotPasseOublier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametre.resx">
+      <DependentUpon>frmParametre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAchat.resx">
+      <DependentUpon>frmAchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmprunt.resx">
+      <DependentUpon>frmEmprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorique.resx">
+      <DependentUpon>frmHistorique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnregistrement.resx">
+      <DependentUpon>FrmEnregistrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLivre.resx">
+      <DependentUpon>FrmLivre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPageAccueil.resx">
+      <DependentUpon>FrmPageAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanier.resx">
+      <DependentUpon>frmPanier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfil.resx">
+      <DependentUpon>FrmProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
